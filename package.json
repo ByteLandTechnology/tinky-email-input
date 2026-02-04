@@ -29,10 +29,11 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "tsc",
-    "build": "tsc",
+    "build": "tsc && npm run docs",
     "lint": "eslint src",
     "prepublish": "npm run build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docs": "typedoc --plugin typedoc-plugin-markdown --disableSources --out docs/api && prettier --write docs/api"
   },
   "files": [
     "./bin/*",
@@ -48,6 +49,8 @@
     "jiti": "^2.6.1",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",
+    "typedoc": "^0.28.16",
+    "typedoc-plugin-markdown": "^4.9.0",
     "typescript-eslint": "^8.54.0"
   },
   "commitlint": {
