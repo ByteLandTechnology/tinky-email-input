@@ -1,3 +1,7 @@
+**tinky-email-input**
+
+---
+
 # Tinky Email Input
 
 A customizable email input component for [Tinky](https://github.com/vadimdemedes/tinky), featuring auto-completion and domain suggestions.

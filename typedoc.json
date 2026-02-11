@@ -1,0 +1,7 @@
+{
+  "plugin": ["typedoc-plugin-markdown"],
+  "disableSources": true,
+  "excludeExternals": true,
+  "out": "docs/api",
+  "formatWithPrettier": true
+}
